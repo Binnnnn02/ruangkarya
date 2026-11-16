@@ -15,6 +15,17 @@ export async function fetchWorks(admin = false) {
   return data;
 }
 
+export async function fetchSubmissions() {
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from("submissions")
+    .select("*")
+    .eq("status", "pending")
+    .order("submitted_at", { ascending: false });
+  if (error) throw error;
+  return data;
+}
+
 export async function hasAdminAccess(userId) {
   if (!supabase || !userId) return false;
   const { data, error } = await supabase

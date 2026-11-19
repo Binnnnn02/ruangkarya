@@ -15,7 +15,9 @@ export default function SubmitWorkPage() {
             <>
               <div className="eyebrow"><Send size={13} /> KIRIM KE RUANG KARYA</div>
               <h1>Punya tulisan yang ingin dibagikan?</h1>
-              <p className="submission-intro">Kirim naskah, jurnal, makalah, puisi, esai, atau cerita pendek. Kirimanmu akan ditinjau redaksi dan tidak tampil sebelum disetujui.</p>
+              <p>Bagikan karyamu dengan komunitas Ruang Karya. Setiap tulisan adalah undangan untuk melihat dunia dari sisi lain.</p>
+              <p>Kirim naskah, jurnal, makalah, puisi, esai, atau cerita pendek. Kirimanmu akan ditinjau redaksi dan tidak tampil sebelum disetujui.</p>
+
               <form className="submission-form" onSubmit={submitWork}>
                 <label>Judul karya<input name="title" required maxLength="180" placeholder="Judul tulisanmu" /></label>
                 <label>Nama penulis<input name="author" required maxLength="120" placeholder="Nama yang ingin ditampilkan" /></label>

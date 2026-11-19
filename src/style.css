@@ -1,5 +1,5 @@
 :root {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #172342;
   background: #fbfcff;
   font-synthesis: none;
@@ -13,7 +13,7 @@
   --blue: #486be8;
   --blue-deep: #2348c9;
   --pale: #edf2ff;
-  --serif: "Manrope", sans-serif;
+  --serif: "Inter", sans-serif;
 }
 * {
   box-sizing: border-box;
